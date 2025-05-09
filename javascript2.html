@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            background: #663535;
+            color: aliceblue;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 50%;
+        }
+        button:hover{
+            background: #e74949;
+            color: black;
+        }
+        .botonBonito{
+            background: #99eaf0;
+            padding: 10px;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: fantasy;
+        }
+    </style>
+</head>
+<body>
+    <a class="botonBonito" href="javascript1.html"> Javascript1 </a><br>
+    <div id="mensaje" style="display: none; color: rgb(109, 18, 18); font-weight: bold;">
+        <h1>¡Hola!, Este es un mensaje mostrado con Javascript.</h1>
+    </div>
+
+    <button onclick="mostrarMensaje()">Mostrar Mensaje</button>
+    <script>
+        
+        function mostrarMensaje(){
+            var elemento = document.getElementById("mensaje");
+            elemento.style.display = "block";
+        }
+
+    </script>
+</body>
+</html>
